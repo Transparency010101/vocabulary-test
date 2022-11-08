@@ -11,6 +11,15 @@ export const db = new sql.Database("./vocabularyDB.db", sql.OPEN_READWRITE, (err
 // sqlCommands.showRandomRow();
 // sqlCommands.showAllRows();
 
+// let answer = prompt("Write..: ", null);
+// console.log("Вибери команду:");
+// console.log("insertData - записать слово");
+// console.log("showRandomRow - Начать тест");
+
+// setInterval(() => {
+   // console.log(sqlCommands.showRandomRow());
+// }, 6000);
+
 db.close((err) => {
    checkError(err);
 });
